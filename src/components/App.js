@@ -4,6 +4,7 @@ import CreateLink from './CreateLink.js'
 import Header from './Header.js'
 import { Switch, Route } from 'react-router-dom'
 import Login from './Login.js'
+import Search from './Search.js'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
             <Route exact path="/" component={LinkList} />
             <Route exact path="/create" component={CreateLink} />
             <Route exact path="/login" component={Login} />
+            <Route exact path='/search' component={Search} />
           </Switch>
         </div>
       </div>
